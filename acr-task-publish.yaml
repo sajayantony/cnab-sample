@@ -1,0 +1,7 @@
+version: v1.1.0
+steps: 
+  - cmd: getporter/porter build
+    workingDirectory: bundle
+
+  - cmd:  getporter/porter publish
+    workingDirectory: bundle 
