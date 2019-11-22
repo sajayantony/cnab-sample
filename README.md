@@ -31,5 +31,7 @@ ACR Tasks supports executing CNAB bundles. You can use porter as a driver to kic
 
 
 ```sh
-az acr run -r myregistry --cmd 'getporter/porter install demo --tag myregistry.azurecr.io/porter-hello-bundle:latest' /dev/null
+az acr run -r myregistry \
+    --cmd 'getporter/porter install demo \ --tag myregistry.azurecr.io/porter-hello-bundle:latest' \
+    /dev/null
 ```
